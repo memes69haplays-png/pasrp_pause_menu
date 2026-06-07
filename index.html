@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>PASRP</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="overlay">
+
+    <div class="sidebar">
+
+        <img src="assets/pasrp-logo.png" class="logo">
+
+        <h2>PASRP</h2>
+
+        <button onclick="switchTab('home')">
+            🏠 Home
+        </button>
+
+        <button onclick="switchTab('departments')">
+            🚓 Departments
+        </button>
+
+        <button onclick="mapPage()">
+            🗺️ Map
+        </button>
+
+        <button onclick="settingsPage()">
+            ⚙️ Settings
+        </button>
+
+        <button onclick="switchTab('disconnect')">
+            🚪 Disconnect
+        </button>
+
+    </div>
+
+    <div class="content">
+
+        <div class="topbar">
+
+            <div>
+                Pennsylvania State Roleplay
+            </div>
+
+            <div>
+                Players:
+                <span id="players">0</span>
+            </div>
+
+            <div>
+                Time:
+                <span id="time">00:00</span>
+            </div>
+
+            <button class="discord" onclick="discord()">
+                Join Discord
+            </button>
+
+        </div>
+
+        <div id="home" class="page active">
+
+            <h1>Welcome to PASRP</h1>
+
+            <p>
+                Professional Pennsylvania-based
+                FiveM Roleplay Community
+            </p>
+
+        </div>
+
+        <div id="departments" class="page">
+
+            <div class="card">
+                Pennsylvania State Police
+            </div>
+
+            <div class="card">
+                Lebanon Police Department
+            </div>
+
+            <div class="card">
+                Fire / EMS
+            </div>
+
+            <div class="card">
+                Civilian Operations
+            </div>
+
+            <div class="card">
+                Communications
+            </div>
+
+        </div>
+
+        <div id="disconnect" class="page">
+
+            <h2>
+                Leave PASRP?
+            </h2>
+
+            <button class="danger"
+                onclick="disconnectServer()">
+                Disconnect
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
